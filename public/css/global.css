@@ -1,0 +1,54 @@
+/* Styles généraux */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f0f0f0; /* Couleur de fond du header */
+    padding: 10px 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+  }
+  
+  header div {
+    display: flex; /* Affichage en ligne pour le menu */
+    justify-content: space-around; /* Espacement uniforme entre les éléments du menu */
+  }
+  
+  header a {
+    text-decoration: none; /* Suppression du soulignement */
+    color: #333; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+  }
+  
+  /* Body */
+  main {
+    padding: 20px; /* Espacement intérieur */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+  }
+  
+  footer #contact {
+    display: inline-block; /* Affichage en ligne pour le bloc "contact" */
+    margin: 0 20px; /* Espacement autour du bloc "contact" */
+  }
+  
+  footer #contact h3 {
+    margin-bottom: 5px; /* Espacement sous le titre */
+  }
+  
+  footer #Ln {
+    display: inline-block; /* Affichage en ligne pour le lien LinkedIn */
+  }
+  
+  footer img {
+    height: 21px; /* Hauteur de l'image */
+  }

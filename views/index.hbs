@@ -1,0 +1,16 @@
+<div id="highlight-project">
+    {{#if highlighted}}
+    <h2>Projet mis en avant</h2>
+        {{#each highlighted}} 
+            <h3>{{projectName}}</h3>
+            <a href="project/{{projectName}}"><img src="../image/{{imagePath}}" alt="image {{projectName}}"></a>
+        {{/each}}
+    {{/if}}
+</div>
+<div id="project">
+    <h2>Projets</h2>
+    {{#each projects}}
+        <h3>{{projectName}}</h3>
+        <a href="project/{{projectName}}"><img src="../image/{{imagePath}}" alt="image {{projectName}}"></a>
+    {{/each}}
+</div>
