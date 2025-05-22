@@ -43,7 +43,27 @@ app.get("/", async (req,res)=>{
     res.render("index",{highlighted, projects});
 })
 
+app.get("/self",async (req,res)=>{
+    res.render("self");
+})
 
+app.get("/CV", async (req,res)=>{
+    res.sendFile(path.join(__dirname, 'public/data/CV_Julien_Demaiziere.pdf'));
+})
+
+app.get("/projects", async (req,res)=>{
+    const Projets = await prisma.projects.findMany();
+    res.render("projects",{Projets});
+})
+
+app.get("/project/:nom",async (req,res)=>{
+    const Proj = await prisma.projects.findMany({
+        where: {
+            projectName : req.params.nom,
+        },
+    })
+    res.render("projects/project", {Proj});
+})
 
 app.listen(PORT,()=>{
     console.log(`server running at http://localhost:${PORT}`);
