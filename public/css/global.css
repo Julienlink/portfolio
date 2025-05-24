@@ -18,9 +18,11 @@ header {
 header div {
   display: flex;
   justify-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
 
-header a {
+header,header a {
   text-decoration: none;
   color: #333;
   font-weight: bold;

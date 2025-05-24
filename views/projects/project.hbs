@@ -1,0 +1,15 @@
+<div>
+    {{#if Proj}}
+    <h3>{{Proj.projectName}}</h3>
+    <p>{{Proj.desc}}</p>
+    <img src="../image/{{Proj.projectName}}/{{Proj.imagePath}}" alt="image {{Proj.projectName}}">
+    
+    <p>compétences utilisées:</p>
+    <p>{{#each Skills}}{{skillName}},{{/each}}</p>
+
+    <h2>Gallerie</h2>
+    {{#each image}}
+    <img src="../image/{{Proj.projectName}}/{{this}}" alt="image">
+    {{/each}}
+    {{/if}}
+</div>
