@@ -106,7 +106,7 @@ app.get("/project/:nom",async (req,res)=>{
     fs.readdir(imgDir, (err,files)=>{
         const images = files.filter(file => /\.(jpg|jpeg|png)$/.test(file));
 
-        console.log()
+        console.log(images)
     res.render("projects/project", {Proj,Skills,images});
     });
 });

@@ -4,12 +4,13 @@
     <p>{{Proj.desc}}</p>
     <img src="../image/{{Proj.projectName}}/{{Proj.imagePath}}" alt="image {{Proj.projectName}}">
     
-    <p>compétences utilisées:</p>
-    <p>{{#each Skills}}{{skillName}},{{/each}}</p>
+    
 
     <h2>Gallerie</h2>
-    {{#each image}}
-    <img src="../image/{{Proj.projectName}}/{{this}}" alt="image">
+    {{#each images}}
+        <img src="../image/{{Proj.projectName}}/{{this}}" alt="{{this}}">
     {{/each}}
+    <h2>compétences utilisées:</h2>
+    <p>{{#each Skills}}{{skillName}}{{#unless @last}}, {{/unless}}{{/each}}</p>
     {{/if}}
 </div>

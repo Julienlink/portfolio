@@ -2,15 +2,19 @@
     {{#if highlighted}}
     <h2>Projet mis en avant</h2>
         {{#each highlighted}} 
-            <h3>{{projectName}}</h3>
-            <a href="project/{{projectName}}"><img src="../image/{{projectName}}/{{imagePath}}" alt="image {{projectName}}"></a>
+            <div>
+                <h3>{{projectName}}</h3>
+                <a href="project/{{projectName}}"><img src="../image/{{projectName}}/{{imagePath}}" alt="image {{projectName}}"></a>
+            </div>
         {{/each}}
     {{/if}}
 </div>
 <div id="project">
     <h2>Projets</h2>
     {{#each projects}}
-        <h3>{{projectName}}</h3>
-        <a href="project/{{projectName}}"><img src="../image/{{projectName}}/{{imagePath}}" alt="image {{projectName}}"></a>
+        <div>
+            <h3>{{projectName}}</h3>
+            <a href="project/{{projectName}}"><img src="../image/{{projectName}}/{{imagePath}}" alt="image {{projectName}}"></a>
+        </div>
     {{/each}}
 </div>
